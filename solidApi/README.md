@@ -47,3 +47,45 @@ Use:
 ```bash
 npm start
 ```
+
+## Para Transpilar o código TS para JS
+
+Scrip configurado para o compilar o código em TypeScrip para JavaScript
+
+```bash
+npx tsc
+```
+
+Use:
+
+```bash
+npm run transpile
+```
+
+## Rotas da API
+
+### Rota GET
+
+```
+/
+```
+
+Retorna todos os usuários cadastrados no servidor
+
+### Rota POST
+
+Use:
+
+```bash
+/user
+```
+
+Espera receber um JSON conforme o modelo
+
+```json
+{
+  "name": "Nome do usuário",
+  "email": "email@email.com",
+  "password": "pass.123.pass"
+}
+```
