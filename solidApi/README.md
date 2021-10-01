@@ -24,17 +24,26 @@ Para rodar o projeto inicialmente foram usados os seguinte comandos.
 
 ```bash
 npm init -y
+npx tsc --init
 ```
 
 ### Pacotes instalados
 
 ```bash
-npm i express
-npm i typescript ts-node-dev -D
+npm i express typescript ts-node-dev -D
+npm i uuidv4
 ```
 
 ## Para rodar
 
+Scrip configurado para o start
+
 ```bash
-npx tsc --init
+tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts
+```
+
+Use:
+
+```bash
+npm start
 ```

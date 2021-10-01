@@ -1,13 +1,15 @@
 import { Router } from "express";
+import { createUserController } from "./useCases/CreateUser";
+import { listUserController } from "./useCases/ListUsers";
 
 const router = Router();
 
 router.post("/user", (request, response) => {
-  return response.status(201).send();
+  return createUserController.handle(request, response);
 });
 
 router.get("/", (request, response) => {
-  return response.send("Rodando...");
+  return listUserController.handle(request, response);
 });
 
 export { router };
