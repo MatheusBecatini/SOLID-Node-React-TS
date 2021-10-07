@@ -27,11 +27,18 @@ npm init -y
 npx tsc --init
 ```
 
-### Pacotes instalados
+## Pacotes instalados
+
+### Dependências de desenvolvimento
 
 ```bash
-npm i express typescript ts-node-dev -D
-npm i uuidv4
+npm i express typescript ts-node-dev @types/cors -D
+```
+
+### Dependências de produçao
+
+```bash
+npm i uuidv4 cors
 ```
 
 ## Para rodar
