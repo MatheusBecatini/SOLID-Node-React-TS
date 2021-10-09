@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { connect } from "react-redux";
 import { Dispatch, bindActionCreators } from "redux";
 import IUser from "../interfaces/IUser";
-import { ApplicationStore } from "../store/store";
+import { ApplicationStore } from "../store/types/types";
 import UserFragment from "./UserFragment";
 import * as repositoriesActions from "../store/ducks/repositories/actions";
 
