@@ -10,11 +10,11 @@ Create using:
 
 ### Production dependencies
 
-`npm i axios redux redux-saga react-redux`
+`npm i axios redux redux-saga react-redux typesafe-actions`
 
 ### Development dependencies
 
-`npm `
+`npm i @types/react-redux @types/redux-saga -D`
 
 ## Available Scripts
 
